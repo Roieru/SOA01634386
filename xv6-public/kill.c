@@ -12,6 +12,10 @@ main(int argc, char **argv)
     exit();
   }
   for(i=1; i<argc; i++)
+   if(atoi(argv[i])==1) {
+       printf(1,"Yamete kudasai\n");
+   } else{
     kill(atoi(argv[i]));
+   }
   exit();
 }
